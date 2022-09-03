@@ -9,6 +9,24 @@ a{
 }
 body{
 }
+.header{
+  width: 100%;
+  height: 200px;
+  text-align: center;
+}
+.header img {
+  margin-top: 1em;
+  width: 50%;
+}
+.foot{
+  text-align: center;
+}
+.foot span{
+  font-size: 13px;
+  font-weight: 600;
+}
+
+
 .main__body{
   padding: 1em;
 }
@@ -224,7 +242,7 @@ h2{
 }
 
 
-
+/**
 .foot {
   z-index: 500;
   color: back;
@@ -237,34 +255,45 @@ h2{
   font-size: 13px;
   font-weight: 600;
 }
-
+**/
 
 @media only screen and (min-width: 600px) {
   .main__body{
   padding: 1em;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  flex: 1;
   height: 100vh;
+  justify-content: center;
+  align-content: center;
 }
   .main{
   margin: 5px;
   border: solid 1px #D1D2D5;
   z-index: 1;
   border-radius: 5px;
-  width: 300px;
+  min-width: 300px;
   height: 220px;
   position: relative;
   overflow: hidden;
-  margin-bottom: 2em;
 }
 
 
-.foot {
-  z-index: 500;
-  color: back;
-  display: flex;
-  justify-content: center;
-  margin-top: -5em;
+.header{
+  width: 100%;
+  height: 200px;
+  text-align: center;
+}
+.header img {
+  margin-top: 1em;
+  width: 20%;
+}
+
+.foot{
+  text-align: center;
+}
+.foot span{
+  font-size: 13px;
+  font-weight: 600;
 }
 }
